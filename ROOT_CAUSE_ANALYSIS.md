@@ -1,4 +1,4 @@
-# Root Cause Estimation Module
+﻿# Root Cause Estimation Module
 
 ## Overview
 
@@ -200,7 +200,7 @@ This creates a **causal dataset** - not just bug descriptions, but explanations 
 If you use this Root Cause Estimation module in your research, please cite:
 
 ```bibtex
-@misc{multimodal_bug_analyzer_2025,
+@Flakes8387{multimodal_bug_analyzer_2025,
   title={Multimodal Bug Report Analyzer with Root Cause Estimation},
   author={[Your Name]},
   year={2025},
@@ -211,3 +211,4 @@ If you use this Root Cause Estimation module in your research, please cite:
 ## License
 
 This feature is part of the Multimodal Bug Analyzer project and follows the same MIT license.
+

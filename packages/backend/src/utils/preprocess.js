@@ -1,4 +1,4 @@
-const { spawn } = require('child_process');
+﻿const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
@@ -6,8 +6,8 @@ const path = require('path');
  * Extract text from an image using OCR
  * Currently returns empty string unless USE_OCR environment variable is set
  * 
- * @param {string} imagePath - Path to the image file
- * @returns {Promise<string>} Extracted text from the image
+ * @Flakes8387 {string} imagePath - Path to the image file
+ * @Flakes8387 {Promise<string>} Extracted text from the image
  */
 async function extractTextFromImage(imagePath) {
   // Check if OCR is enabled
@@ -79,8 +79,8 @@ async function extractTextFromImage(imagePath) {
  * Normalize stack trace by removing absolute paths and version numbers
  * This helps with better matching and categorization of similar bugs
  * 
- * @param {string} stackText - Raw stack trace text
- * @returns {string} Normalized stack trace
+ * @Flakes8387 {string} stackText - Raw stack trace text
+ * @Flakes8387 {string} Normalized stack trace
  */
 function normalizeStacktrace(stackText) {
   if (!stackText || typeof stackText !== 'string') {
@@ -121,8 +121,8 @@ function normalizeStacktrace(stackText) {
 /**
  * Batch extract text from multiple images
  * 
- * @param {Array<string>} imagePaths - Array of image file paths
- * @returns {Promise<Array<string>>} Array of extracted text
+ * @Flakes8387 {Array<string>} imagePaths - Array of image file paths
+ * @Flakes8387 {Promise<Array<string>>} Array of extracted text
  */
 async function extractTextFromImages(imagePaths) {
   if (!Array.isArray(imagePaths) || imagePaths.length === 0) {
@@ -136,9 +136,9 @@ async function extractTextFromImages(imagePaths) {
 /**
  * Combine stack trace with OCR text from screenshots
  * 
- * @param {string} stacktrace - Stack trace text
- * @param {Array<string>} imagePaths - Paths to screenshot images
- * @returns {Promise<string>} Combined and normalized text
+ * @Flakes8387 {string} stacktrace - Stack trace text
+ * @Flakes8387 {Array<string>} imagePaths - Paths to screenshot images
+ * @Flakes8387 {Promise<string>} Combined and normalized text
  */
 async function preprocessBugData(stacktrace, imagePaths = []) {
   let combinedText = stacktrace || '';
@@ -161,3 +161,4 @@ module.exports = {
   normalizeStacktrace,
   preprocessBugData
 };
+

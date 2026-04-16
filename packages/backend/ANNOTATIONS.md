@@ -1,4 +1,4 @@
-# Annotations API
+﻿# Annotations API
 
 Human annotation system for bug reports to create training data.
 
@@ -17,7 +17,7 @@ Content-Type: application/json
   "expected": "Form should submit successfully",
   "category": "UI Bug",
   "solution": "Add error boundary and validation",
-  "annotator": "john@example.com"
+  "annotator": "john@Flakes8387.com"
 }
 ```
 
@@ -99,10 +99,10 @@ CREATE TABLE annotations (
 
 ## Workflow
 
-1. User submits bug report → stored with status "processing"
-2. AI generates summary → status becomes "completed"
-3. Human reviews and annotates → status becomes "annotated"
-4. Export annotations for training → JSONL download
+1. User submits bug report â†’ stored with status "processing"
+2. AI generates summary â†’ status becomes "completed"
+3. Human reviews and annotates â†’ status becomes "annotated"
+4. Export annotations for training â†’ JSONL download
 5. Use training data to improve model
 
 ## Example Usage
@@ -118,7 +118,7 @@ curl -X POST http://localhost:4000/api/annotations \
     "expected": "Page works",
     "category": "UI Bug",
     "solution": "Fix validation",
-    "annotator": "reviewer@example.com"
+    "annotator": "reviewer@Flakes8387.com"
   }'
 
 # Export for training (requires admin token)
@@ -133,3 +133,4 @@ curl -X GET http://localhost:4000/api/annotations/export/all \
 - Admin token must be set via `ADMIN_TOKEN` environment variable
 - Token is validated for all admin operations
 - Returns 401 if token missing, 403 if invalid
+

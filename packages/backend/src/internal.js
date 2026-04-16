@@ -1,4 +1,4 @@
-const axios = require('axios');
+﻿const axios = require('axios');
 const Joi = require('joi');
 const { updateReportSummary, updateReportStatus, getReportById } = require('./db');
 const { preprocessBugData } = require('./utils/preprocess');
@@ -17,9 +17,9 @@ const summarySchema = Joi.object({
 
 /**
  * Call the inference service to generate a summary for a bug report
- * @param {string} trainerUrl - The URL of the trainer service
- * @param {Object} report - The bug report object
- * @returns {Promise<void>}
+ * @Flakes8387 {string} trainerUrl - The URL of the trainer service
+ * @Flakes8387 {Object} report - The bug report object
+ * @Flakes8387 {Promise<void>}
  */
 async function callInference(trainerUrl, report) {
   try {
@@ -127,9 +127,9 @@ async function callInference(trainerUrl, report) {
 
 /**
  * Batch process multiple reports
- * @param {string} trainerUrl - The URL of the trainer service
- * @param {Array} reports - Array of report objects
- * @returns {Promise<void>}
+ * @Flakes8387 {string} trainerUrl - The URL of the trainer service
+ * @Flakes8387 {Array} reports - Array of report objects
+ * @Flakes8387 {Promise<void>}
  */
 async function batchInference(trainerUrl, reports) {
   const promises = reports.map(report => callInference(trainerUrl, report));
@@ -140,3 +140,4 @@ module.exports = {
   callInference,
   batchInference
 };
+

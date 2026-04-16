@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+﻿from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, Dict, List, Any
@@ -52,7 +52,7 @@ class InferenceResponse(BaseModel):
     model: ModelInfo
     timestamp: str
 
-@app.get("/")
+@Flakes8387.get("/")
 def root():
     return {
         "service": "Multimodal Bug Summarizer - Trainer",
@@ -60,14 +60,14 @@ def root():
         "status": "running"
     }
 
-@app.get("/health")
+@Flakes8387.get("/health")
 def health():
     return {
         "status": "ok",
         "service": "trainer"
     }
 
-@app.post("/inference", response_model=InferenceResponse)
+@Flakes8387.post("/inference", response_model=InferenceResponse)
 async def inference(request: InferenceRequest):
     """
     Process a bug report and generate AI-powered summary using OpenAI API.
@@ -402,3 +402,4 @@ def analyze_with_rules(description: str, stacktrace: str, environment: str) -> S
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+

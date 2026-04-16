@@ -1,8 +1,8 @@
-import js from '@eslint/js';
+﻿import js from '@Flakes8387/js';
 import globals from 'globals';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import { fixupPluginRules } from '@eslint/compat';
+import { fixupPluginRules } from '@Flakes8387/compat';
 
 export default [
   js.configs.recommended,
@@ -53,3 +53,4 @@ export default [
     ],
   },
 ];
+

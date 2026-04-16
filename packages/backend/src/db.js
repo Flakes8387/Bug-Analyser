@@ -1,4 +1,4 @@
-const Database = require('better-sqlite3');
+﻿const Database = require('better-sqlite3');
 const path = require('path');
 const fs = require('fs');
 
@@ -33,8 +33,8 @@ db.exec('CREATE INDEX IF NOT EXISTS idx_reports_createdAt ON reports(createdAt D
 
 /**
  * Insert a new report into the database
- * @param {Object} reportObj - The report object to store
- * @returns {Object} The inserted report with all fields
+ * @Flakes8387 {Object} reportObj - The report object to store
+ * @Flakes8387 {Object} The inserted report with all fields
  */
 function insertReport(reportObj) {
   const stmt = db.prepare(`
@@ -64,8 +64,8 @@ function insertReport(reportObj) {
 
 /**
  * Get a report by ID
- * @param {string} id - The report ID
- * @returns {Object|null} The report object or null if not found
+ * @Flakes8387 {string} id - The report ID
+ * @Flakes8387 {Object|null} The report object or null if not found
  */
 function getReportById(id) {
   const stmt = db.prepare('SELECT * FROM reports WHERE id = ?');
@@ -86,9 +86,9 @@ function getReportById(id) {
 
 /**
  * List reports with pagination
- * @param {number} limit - Maximum number of reports to return
- * @param {number} offset - Number of reports to skip
- * @returns {Array} Array of report objects
+ * @Flakes8387 {number} limit - Maximum number of reports to return
+ * @Flakes8387 {number} offset - Number of reports to skip
+ * @Flakes8387 {Array} Array of report objects
  */
 function listReports(limit = 20, offset = 0) {
   const stmt = db.prepare(`
@@ -110,9 +110,9 @@ function listReports(limit = 20, offset = 0) {
 
 /**
  * Update the summary for a report
- * @param {string} id - The report ID
- * @param {Object} summary - The summary object
- * @returns {boolean} True if updated, false if not found
+ * @Flakes8387 {string} id - The report ID
+ * @Flakes8387 {Object} summary - The summary object
+ * @Flakes8387 {boolean} True if updated, false if not found
  */
 function updateReportSummary(id, summary) {
   const stmt = db.prepare(`
@@ -129,9 +129,9 @@ function updateReportSummary(id, summary) {
 
 /**
  * Update the status of a report
- * @param {string} id - The report ID
- * @param {string} status - The new status
- * @returns {boolean} True if updated, false if not found
+ * @Flakes8387 {string} id - The report ID
+ * @Flakes8387 {string} status - The new status
+ * @Flakes8387 {boolean} True if updated, false if not found
  */
 function updateReportStatus(id, status) {
   const stmt = db.prepare('UPDATE reports SET status = ? WHERE id = ?');
@@ -142,7 +142,7 @@ function updateReportStatus(id, status) {
 
 /**
  * Get total count of reports
- * @returns {number} Total number of reports
+ * @Flakes8387 {number} Total number of reports
  */
 function getReportsCount() {
   const stmt = db.prepare('SELECT COUNT(*) as count FROM reports');
@@ -169,3 +169,4 @@ module.exports = {
   updateReportStatus,
   getReportsCount
 };
+

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import SubmitBug from './pages/SubmitBug';
 import Review from './pages/Review';
@@ -301,7 +301,7 @@ function Footer() {
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                support@buganalyzer.com
+                support@Flakes8387.com
               </li>
               <li className="text-gray-600 flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -316,7 +316,7 @@ function Footer() {
 
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 text-sm">
-            © 2025 BugAnalyzer. All rights reserved.
+            Â© 2025 BugAnalyzer. All rights reserved.
           </p>
         </div>
       </div>
@@ -325,3 +325,4 @@ function Footer() {
 }
 
 export default App;
+
