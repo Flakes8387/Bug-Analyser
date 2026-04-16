@@ -1,6 +1,6 @@
 # Multimodal Bug Summarizer
 
-[![CI](https://github.com/yourusername/multimodal-bug-summarizer/workflows/CI/badge.svg)](https://github.com/yourusername/multimodal-bug-summarizer/actions)
+[![CI](https://github.com/Flakes8387/Bug-Analyser/workflows/CI/badge.svg)](https://github.com/Flakes8387/Bug-Analyser/actions)
 
 A full-stack JavaScript monorepo for AI-powered bug report summarization with multimodal input support (text + screenshots).
 
