@@ -1,10 +1,10 @@
-﻿# Multimodal Bug Summarizer
+# Multimodal Bug Summarizer
 
 [![CI](https://github.com/Flakes8387/Bug-Analyser/workflows/CI/badge.svg)](https://github.com/Flakes8387/Bug-Analyser/actions)
 
 A full-stack JavaScript monorepo for AI-powered bug report summarization with multimodal input support (text + screenshots).
 
-## ðŸš€ Features
+## �Ys? Features
 
 - **Multimodal Input**: Accept bug reports with text descriptions, stack traces, and screenshot images
 - **AI-Powered Summarization**: Automatically generate structured summaries with 5 key dimensions:
@@ -19,35 +19,35 @@ A full-stack JavaScript monorepo for AI-powered bug report summarization with mu
 - **Persistent Storage**: SQLite database for reports and annotations
 - **Docker Support**: Fully containerized services with docker-compose
 
-## ðŸ“ Project Structure
+## �Y"� Project Structure
 
 ```
 multimodal-bug-summarizer/
-â”œâ”€â”€ packages/
-â”‚   â”œâ”€â”€ frontend/          # React + Vite + Tailwind CSS
-â”‚   â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”‚   â”œâ”€â”€ pages/     # SubmitBug, Review
-â”‚   â”‚   â”‚   â”œâ”€â”€ components/# SummaryCard
-â”‚   â”‚   â”‚   â””â”€â”€ main.jsx
-â”‚   â”‚   â””â”€â”€ package.json
-â”‚   â””â”€â”€ backend/           # Express.js API
-â”‚       â”œâ”€â”€ src/
-â”‚       â”‚   â”œâ”€â”€ routes/    # Annotations API
-â”‚       â”‚   â”œâ”€â”€ utils/     # Preprocessing utilities
-â”‚       â”‚   â”œâ”€â”€ db.js      # SQLite database
-â”‚       â”‚   â”œâ”€â”€ index.js   # Main server
-â”‚       â”‚   â””â”€â”€ internal.js# Inference integration
-â”‚       â””â”€â”€ package.json
-â”œâ”€â”€ services/
-â”‚   â””â”€â”€ trainer/           # FastAPI inference service
-â”‚       â”œâ”€â”€ main.py        # Mock trainer (ready for ML integration)
-â”‚       â””â”€â”€ requirements.txt
-â”œâ”€â”€ models/                # Model storage directory
-â”œâ”€â”€ docker-compose.yml
-â””â”€â”€ package.json           # Root workspace config
+�"o�"?�"? packages/
+�",   �"o�"?�"? frontend/          # React + Vite + Tailwind CSS
+�",   �",   �"o�"?�"? src/
+�",   �",   �",   �"o�"?�"? pages/     # SubmitBug, Review
+�",   �",   �",   �"o�"?�"? components/# SummaryCard
+�",   �",   �",   �""�"?�"? main.jsx
+�",   �",   �""�"?�"? package.json
+�",   �""�"?�"? backend/           # Express.js API
+�",       �"o�"?�"? src/
+�",       �",   �"o�"?�"? routes/    # Annotations API
+�",       �",   �"o�"?�"? utils/     # Preprocessing utilities
+�",       �",   �"o�"?�"? db.js      # SQLite database
+�",       �",   �"o�"?�"? index.js   # Main server
+�",       �",   �""�"?�"? internal.js# Inference integration
+�",       �""�"?�"? package.json
+�"o�"?�"? services/
+�",   �""�"?�"? trainer/           # FastAPI inference service
+�",       �"o�"?�"? main.py        # Mock trainer (ready for ML integration)
+�",       �""�"?�"? requirements.txt
+�"o�"?�"? models/                # Model storage directory
+�"o�"?�"? docker-compose.yml
+�""�"?�"? package.json           # Root workspace config
 ```
 
-## ðŸ› ï¸ Technology Stack
+## �Y>�️ Technology Stack
 
 ### Frontend
 - **React 18** - UI framework
@@ -69,7 +69,7 @@ multimodal-bug-summarizer/
 - **Uvicorn** - ASGI server
 - **Pydantic** - Data validation
 
-## ðŸš¦ Getting Started
+## �Ys� Getting Started
 
 ### Prerequisites
 
@@ -143,7 +143,7 @@ yarn --cwd packages/backend test --coverage
 yarn lint
 ```
 
-## ðŸ“ API Documentation
+## �Y"� API Documentation
 
 ### Bug Reports
 
@@ -205,7 +205,7 @@ Returns: JSONL file for ML training
 
 See [ANNOTATIONS.md](packages/backend/ANNOTATIONS.md) for full API documentation.
 
-## ðŸ”’ Environment Variables
+## �Y"' Environment Variables
 
 ### Backend
 ```bash
@@ -223,7 +223,7 @@ VITE_API_URL=http://localhost:4000
 ### Docker Compose
 Environment variables are configured in `docker-compose.yml`.
 
-## ðŸ§ª Testing
+## �Y�� Testing
 
 The project includes comprehensive unit tests:
 
@@ -238,7 +238,7 @@ docker compose exec backend npm test
 docker compose exec backend npm test -- --coverage
 ```
 
-## ðŸ”„ CI/CD
+## �Y"" CI/CD
 
 GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push and PR:
 
@@ -252,7 +252,7 @@ GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push and PR:
    - Build all Docker images
    - Validate docker-compose config
 
-## ðŸ“¦ Deployment
+## �Y"� Deployment
 
 ### Docker Compose Production
 
@@ -273,7 +273,7 @@ docker compose down
 2. Deploy backend: `node packages/backend/src/index.js`
 3. Deploy trainer: `python -m uvicorn services.trainer.main:app --host 0.0.0.0`
 
-## ðŸ”® Future Enhancements
+## �Y"� Future Enhancements
 
 - [ ] Replace mock trainer with actual ML model
 - [ ] Add image OCR with Tesseract
@@ -285,7 +285,7 @@ docker compose down
 - [ ] Add monitoring and logging
 - [ ] Deploy to cloud (AWS/GCP/Azure)
 
-## ðŸ¤ Contributing
+## �Y�� Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -293,7 +293,7 @@ docker compose down
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## ðŸ“„ License
+## �Y"" License
 
 This project is licensed under the MIT License.
 
