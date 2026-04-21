@@ -1,7 +1,7 @@
-﻿module.exports = {
+module.exports = {
   presets: [
-    ['@Flakes8387/preset-env', { targets: { node: 'current' } }],
-    ['@Flakes8387/preset-react', { runtime: 'automatic' }],
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    ['@babel/preset-react', { runtime: 'automatic' }],
   ],
 };
 
